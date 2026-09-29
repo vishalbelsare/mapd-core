@@ -1,0 +1,21 @@
+# SPDX-FileCopyrightText: Copyright (c) 2026, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+# SPDX-License-Identifier: Apache-2.0
+
+name: TSAN Tester
+
+# Placeholder workflow — does not build or run TSAN tests. Use workflow_dispatch
+# to verify the workflow file is wired up without consuming runner resources.
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  noop:
+    name: noop
+    runs-on: linux-amd64-cpu16
+    steps:
+      - name: No-op
+        run: echo "tsan-tester placeholder — nothing to do"
